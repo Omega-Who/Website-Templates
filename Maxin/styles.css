@@ -33,16 +33,32 @@ TABLE OF CONTENT
 
   /* PALETTE */
 
-  --ui-color-body     : #009696;
+  --ui-color-body     : #28c44a;
   --ui-color-primary  : ;
   --ui-color-secondary: ;
   --ui-color-tertiary : ;
 
+  /* BACKGROUND */
+
+  --ui-color-bg-body  : #505050;
+
+  /* TYPOGRAPHY */
+
+  --ui-color-typography-heading: ;
+  --ui-color-typography-bobdy  : ;
+  --ui-color-typography-note   : ;
+  --ui-color-typography-button : ;
+
   /*--------------------------------------------------------------
   |  1.2 TYPOGRAPHY
   --------------------------------------------------------------*/
-  
-  --ui: ;
+
+  --ui-typography-font: ;
+
+  --ui-typography-p: ;
+  --ui-typography-p-main: ;
+  --ui-typography-h: ;
+
 
   /*--------------------------------------------------------------
   |  1.3 LAYOUT
@@ -54,4 +70,29 @@ TABLE OF CONTENT
 
 body {
   background-color: var(--ui-color-body);
+}
+
+/*--------------------------------------------------------------
+|   2.0 VARIABLES
+--------------------------------------------------------------*/
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after { box-sizing: inherit; }
+
+body {
+  background-color: var(--ui-color-bg-body);
+  color: var(--ui-color-body);
+  font-family: var(--ui-typography-font);
+  font-size: var(--ui-typography-p);
+  font-weight: 400;
+  line-height: var(--ui-typography-p-main);
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
