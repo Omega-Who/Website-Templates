@@ -4,12 +4,48 @@ TABLE OF CONTENT
 VARIABLES
 | COLOR 
 | TYPOGRAPHY
+| LAYOUT
 --------------------------------------------------------------*/
 
 :root {
 
-  /*  COLOUR  */
+  /*    COLOUR    */
 
   --color-main: #fff;
+  --color-typography-body: #000;
+  --color-typography-link: rgb(120, 120, 240);
+  --color-typography-link-hover: rgb(200, 120, 240);
 
+  /*  TYPOGRAPHY  */
+
+  --typography-main: "Helvetica", sans-serif;
+
+  /*    LAYOUT    */
+
+  --layout-container-footer: 1.25rem;
+
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {box-sizing: inherit;}
+
+body {
+  background-color: var(--color-main);
+  font-family: var(--typography-main);
+}
+
+a {
+  color: var(--color-typography-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-typography-link-hover);
+  text-decoration: none;
 }
